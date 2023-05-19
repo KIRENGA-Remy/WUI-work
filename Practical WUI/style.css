@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* background-color: aqua; */
+  background-color: rgba(4, 20, 15, 0.3);
+}
+
+.desc {
+  position: fixed;
+  display: flex;
+  background-color: gray;
+  width: 100%;
+  z-index: 1;
+}
+
+.pub {
+  margin-left: 40%;
+  margin-top: 12px;
+  color: blue;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.image {
+  max-width: 100px;
+  margin-left: 20px;
+}
+
+nav {
+  position: relative;
+  margin-top: 60px;
+  height: 5em;
+  width: 0% 80%;
+  padding: 0 6.25em;
+  font-weight: bold;
+  border-radius: 0.9em 0em;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  transition: all 0.5s;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+nav ul li a.active {
+  color: rgba(40, 40, 150, 0.7);
+}
+
+@media (max-width: 59.5em) {
+  nav ul li a {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 53.6em) {
+  ul {
+    position: fixed;
+    left: 5px;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 0.8em 15px;
+    line-height: 1.9em;
+  }
+  nav ul li a {
+    font-size: 0.8rem;
+  }
+  a:hover,
+  a.active {
+    background: none;
+    color: blue;
+  }
+}
+
+.floats .List {
+  column-count: 3;
+  column-gap: 20px;
+  width: 100%;
+  margin-right: 10px;
+  background-color: rgba(128, 128, 128, 0.3);
+  align-items: center;
+  box-shadow: 2px 8px 5px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.floats ul li h2 {
+  margin-right: 20px;
+}
+
+.List {
+  display: flex;
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+.List li {
+  margin-right: 10px;
+}
+
+.content {
+  padding: 10px;
+}
+
+.Politics,
+.Musics,
+.Sports,
+.Economics {
+  display: flex;
+  flex-direction: column;
+}
+
+.show-more {
+  outline: none;
+  border: none;
+  width: 6rem;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  display: inline-flex;
+  background-color: black;
+  color: #fff;
+}
+
+.more {
+  display: none;
+}
+
+.show-more .more {
+  display: block;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  background-color: gray;
+  min-height: 6em;
+  padding: 1.25em 3.13em;
+  flex-direction: column;
+  z-index: 1;
+}
+
+footer .icon,
+footer .menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.63em 0;
+  flex-wrap: wrap;
+}
+
+footer .icon li,
+footer .menu li {
+  list-style: none;
+}
+
+footer .icon li a {
+  font-size: 2em;
+  color: #fff;
+  margin: 0 0.63em;
+  display: inline;
+  transition: 0.5s;
+}
+
+footer .menu li a {
+  font-size: 1em;
+  color: #fff;
+  margin: 0 0.63em;
+  display: inline;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+}
+
+footer .menu li a:hover {
+  opacity: 1;
+}
+
+footer .icon li a:hover {
+  transform: translateY(-0.63em);
+}
+
+footer .menu li a.active {
+  color: rgba(40, 40, 150, 0.7);
+}
+
+.photo {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  .desc {
+    position: static;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .pub {
+    margin-left: 0;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .image {
+    max-width: 80px;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  nav {
+    margin-top: 40px;
+    width: 100%;
+    padding: 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .about {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  footer {
+    padding: 1em;
+  }
+
+  footer .icon,
+  footer .menu {
+    justify-content: space-between;
+  }
+
+  footer .menu {
+    margin-top: 10px;
+  }
+}
+.about{
+  display: flex;
+}
+/* .imag{
+  font-size: 4rem;
+  display: flex;
+} */
+/* .imag{
+  position: relative;
+  width: 10%;
+  height: 13%;
+  display: inline-block;
+  transition: .5s linear infinite;
+}
+.imag:nth-child(1){
+  width: 10%;
+  height: 13%;
+}
+.imag:nth-child(5){
+  width: 10%;
+  height: 13%;
+} */
